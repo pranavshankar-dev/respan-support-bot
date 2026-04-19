@@ -1,0 +1,51 @@
+Account & Login Help
+====================
+
+Password Reset
+--------------
+To reset your password:
+1. Go to the login page at app.example.com/login
+2. Click "Forgot Password?" below the sign-in button
+3. Enter the email address associated with your account
+4. Check your inbox for a reset link (valid for 24 hours)
+5. Click the link and enter your new password (minimum 8 characters)
+6. You will be automatically logged in after resetting
+
+If you do not receive the email within 5 minutes, check your spam folder.
+If the issue persists, contact support@example.com.
+
+Changing Your Email Address
+---------------------------
+To change the email on your account:
+1. Log in to your account
+2. Go to Settings → Account → Email
+3. Enter your new email address and confirm your current password
+4. A verification link will be sent to your new email
+5. Click the link to confirm the change
+
+Note: You cannot change your email to one already used by another account.
+
+Two-Factor Authentication (2FA)
+--------------------------------
+We support authenticator apps (Google Authenticator, Authy) and SMS codes.
+
+To enable 2FA:
+1. Go to Settings → Security → Two-Factor Authentication
+2. Click "Enable 2FA"
+3. Scan the QR code with your authenticator app or enter the setup key manually
+4. Enter the 6-digit code from your app to confirm
+5. Save your backup codes in a safe place
+
+To disable 2FA, go to Settings → Security and click "Disable 2FA". You will need to enter a valid code from your authenticator app to confirm.
+
+Locked Accounts
+---------------
+Your account will be temporarily locked after 5 failed login attempts.
+The lockout lasts 30 minutes. After 30 minutes, you can try logging in again.
+If you believe your account was locked by mistake, contact support.
+
+Session Management
+------------------
+You can view all active sessions in Settings → Security → Active Sessions.
+To log out of all other devices, click "Log out all other sessions".
+Sessions expire automatically after 30 days of inactivity.

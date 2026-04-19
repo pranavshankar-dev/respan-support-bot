@@ -1,0 +1,78 @@
+Troubleshooting & Common Issues
+================================
+
+App Won't Load / Blank Screen
+------------------------------
+If the app shows a blank screen or fails to load:
+1. Hard refresh your browser: Ctrl+Shift+R (Windows/Linux) or Cmd+Shift+R (Mac)
+2. Clear your browser cache and cookies for app.example.com
+3. Try an incognito/private browser window
+4. Disable browser extensions (especially ad blockers)
+5. Try a different browser (Chrome, Firefox, Edge)
+
+If the issue persists, check our status page at status.example.com for outages.
+
+Slow Performance
+----------------
+If the app feels slow or unresponsive:
+- Check your internet connection speed at speedtest.net
+- Close unused browser tabs to free up memory
+- Clear your browser cache (Settings → Privacy → Clear browsing data)
+- Check status.example.com — there may be an ongoing performance incident
+
+API Returning 500 Errors
+------------------------
+A 500 Internal Server Error means something went wrong on our side.
+Steps to diagnose:
+1. Check status.example.com for known incidents
+2. Retry the request after 30 seconds — transient errors usually resolve quickly
+3. If persistent, check your request payload for malformed JSON
+4. Contact support with your request ID (found in the X-Request-ID response header)
+
+API Returning 401 Unauthorized
+-------------------------------
+This means your API key is invalid or missing.
+- Confirm your API key starts with "sk-"
+- Check you are passing it in the Authorization header: Authorization: Bearer sk-...
+- Verify the key has not been deleted in Settings → API → API Keys
+- Make sure the key has the correct scopes for the endpoint you are calling
+
+API Returning 403 Forbidden
+----------------------------
+A 403 means your account does not have permission for the requested resource.
+- Check your plan limits in Settings → Billing → Plans
+- Confirm the API key has the required scopes (read/write/admin)
+- Enterprise-only endpoints return 403 on Starter and Pro plans
+
+Data Not Syncing
+----------------
+If data appears outdated or changes are not reflected:
+1. Force a page refresh (Ctrl+Shift+R)
+2. Log out and log back in to refresh your session token
+3. Check if the feature is behind a feature flag in Settings → Features
+4. If using the API, confirm your write request returned a 200 or 201 status
+
+Export / Download Not Working
+------------------------------
+If file exports fail or downloads do not start:
+1. Check your browser's download folder and download history
+2. Disable pop-up blockers for app.example.com
+3. Try a different browser
+4. For large exports (>10MB), exports are emailed instead of downloaded directly —
+   check your inbox within 5 minutes
+
+Notifications Not Arriving
+---------------------------
+If you are not receiving email or Slack notifications:
+1. Check your notification settings in Settings → Notifications
+2. Verify your email address is correct and confirmed
+3. Check your spam/junk folder and whitelist notifications@example.com
+4. For Slack: go to Settings → Integrations → Slack and verify the connection is active
+5. Test notifications using the "Send Test" button in Settings → Notifications
+
+Contacting Support
+------------------
+If none of the above steps resolve your issue:
+- Email: support@example.com (response within 24 hours for Pro, 4 hours for Enterprise)
+- Include: your account email, browser version, steps to reproduce, and any error messages
+- For urgent production issues (Enterprise only): use the hotline number in your contract

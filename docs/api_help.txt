@@ -1,0 +1,79 @@
+API & Integrations
+==================
+
+Getting Your API Key
+--------------------
+1. Log in to your account
+2. Go to Settings → API → API Keys
+3. Click "Generate New Key"
+4. Give the key a name (e.g., "Production", "Development")
+5. Copy and store the key securely — it will not be shown again
+
+API keys have the prefix "sk-" followed by a random string.
+Do not share your API key or commit it to version control.
+
+API Rate Limits
+---------------
+Rate limits depend on your plan:
+
+Starter:  100 requests/minute,  1,000 requests/day
+Pro:      500 requests/minute, 50,000 requests/day
+Enterprise: Custom limits negotiated separately
+
+If you exceed your rate limit, you will receive a 429 Too Many Requests error.
+The response includes a Retry-After header indicating when to retry.
+
+Rotating API Keys
+-----------------
+To rotate a key for security reasons:
+1. Generate a new API key (Settings → API → API Keys)
+2. Update your application to use the new key
+3. Delete the old key from the dashboard
+
+We recommend rotating API keys every 90 days.
+
+Webhook Configuration
+---------------------
+Webhooks allow your application to receive real-time event notifications.
+
+To set up a webhook:
+1. Go to Settings → Integrations → Webhooks
+2. Click "Add Webhook"
+3. Enter your endpoint URL (must be HTTPS)
+4. Select the events you want to receive
+5. Save and test the webhook
+
+Webhook payloads are signed with HMAC-SHA256. The signature is in the
+X-Webhook-Signature header. Always verify signatures before processing.
+
+Supported webhook events:
+- user.created
+- user.deleted
+- payment.succeeded
+- payment.failed
+- subscription.upgraded
+- subscription.cancelled
+
+OAuth Integration
+-----------------
+We support OAuth 2.0 for third-party integrations.
+
+Supported grant types: authorization_code, client_credentials
+Scopes: read, write, admin
+
+To register an OAuth app:
+1. Go to Settings → Integrations → OAuth Apps
+2. Click "Register New App"
+3. Enter your app name, redirect URI, and select scopes
+4. Save and note your client ID and client secret
+
+Slack Integration
+-----------------
+To connect Slack:
+1. Go to Settings → Integrations → Slack
+2. Click "Connect Slack"
+3. Authorize the app in the Slack OAuth popup
+4. Select the channel for notifications
+
+Once connected, you will receive alerts for events like failed payments,
+high error rates, and system status updates directly in your Slack channel.

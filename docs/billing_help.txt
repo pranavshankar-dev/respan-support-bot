@@ -1,0 +1,72 @@
+Billing & Subscriptions
+=======================
+
+Plans and Pricing
+-----------------
+We offer three plans:
+
+Starter (Free)
+- Up to 3 projects
+- 1,000 API calls/month
+- Community support
+- 7-day log retention
+
+Pro ($29/month)
+- Unlimited projects
+- 50,000 API calls/month
+- Email support (response within 24 hours)
+- 90-day log retention
+- Custom integrations
+
+Enterprise (Custom pricing)
+- Unlimited everything
+- Dedicated support with SLA
+- 1-year log retention
+- SSO / SAML support
+- Custom contracts and invoicing
+
+Upgrading Your Plan
+-------------------
+To upgrade:
+1. Go to Settings → Billing → Plans
+2. Select the plan you want
+3. Enter your payment details (credit card or ACH bank transfer)
+4. Confirm the upgrade
+
+Your new plan takes effect immediately. You will be charged a prorated amount
+for the remainder of the current billing period.
+
+Downgrading Your Plan
+---------------------
+To downgrade, go to Settings → Billing → Plans and select a lower tier.
+Downgrades take effect at the end of your current billing period.
+If your current usage exceeds the limits of the lower plan, you will be
+notified and must reduce usage before the downgrade takes effect.
+
+Cancellation Policy
+-------------------
+You can cancel your subscription at any time from Settings → Billing → Cancel Plan.
+Cancellations take effect at the end of the current billing period.
+You will not receive a refund for unused time in the current period.
+After cancellation, your account will revert to the Starter (Free) plan.
+Your data will be retained for 30 days after cancellation.
+
+Invoices and Receipts
+---------------------
+Invoices are emailed automatically on each billing date.
+You can also download past invoices from Settings → Billing → Invoice History.
+Invoices are in PDF format and include a breakdown of charges.
+
+Failed Payments
+---------------
+If a payment fails, we will retry it automatically after 3, 5, and 7 days.
+You will receive an email notification each time a payment attempt fails.
+If the payment fails after all retries, your account will be downgraded to
+the Free plan. To restore your Pro plan, update your payment method in
+Settings → Billing → Payment Methods and pay the outstanding balance.
+
+Refund Policy
+-------------
+Refunds are available within 7 days of the initial purchase or upgrade.
+To request a refund, email billing@example.com with your account email
+and the reason for the refund. Refunds are not available after 7 days.

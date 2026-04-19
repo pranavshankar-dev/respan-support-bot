@@ -1,0 +1,101 @@
+Team Management & Permissions
+==============================
+
+Inviting Team Members
+---------------------
+To invite someone to your organization:
+1. Go to Settings → Team → Members
+2. Click "Invite Member"
+3. Enter their email address
+4. Select their role (see roles below)
+5. Click "Send Invite"
+
+The invitee will receive an email with a link valid for 48 hours.
+If they do not accept within 48 hours, you can resend the invite from
+Settings → Team → Pending Invites.
+
+Roles and Permissions
+---------------------
+There are four roles:
+
+Owner
+- Full access to everything including billing and team management
+- Can delete the organization
+- Only one Owner per organization (can be transferred)
+
+Admin
+- Full access except billing and deleting the organization
+- Can invite/remove members and change roles
+- Can manage all projects and API keys
+
+Member
+- Can view and edit projects they are assigned to
+- Cannot invite members or access billing
+- Cannot create or delete API keys
+
+Viewer
+- Read-only access to assigned projects
+- Cannot make any changes
+- Useful for stakeholders who need visibility
+
+Changing a Member's Role
+------------------------
+1. Go to Settings → Team → Members
+2. Find the member and click the role dropdown next to their name
+3. Select the new role
+4. Confirm the change
+
+Note: You cannot change the Owner's role without transferring ownership.
+
+Removing a Team Member
+-----------------------
+1. Go to Settings → Team → Members
+2. Find the member and click the three-dot menu (⋮)
+3. Select "Remove from organization"
+4. Confirm
+
+Removed members lose access immediately. Their contributions (projects, logs)
+remain in the organization. Any API keys they created remain active —
+rotate them in Settings → API → API Keys if needed for security.
+
+Transferring Ownership
+-----------------------
+To transfer the Owner role to another member:
+1. Go to Settings → Team → Members
+2. Find the member you want to make Owner
+3. Click "Transfer Ownership"
+4. Enter your password to confirm
+
+You will become an Admin after the transfer.
+
+Project-Level Access
+---------------------
+By default, Members can only see projects they are explicitly assigned to.
+To assign a member to a project:
+1. Open the project
+2. Go to Project Settings → Access
+3. Click "Add Member" and select from your team
+
+Admins and Owners can see all projects regardless of assignment.
+
+Single Sign-On (SSO)
+---------------------
+SSO via SAML 2.0 is available on the Enterprise plan only.
+
+To configure SSO:
+1. Go to Settings → Security → SSO
+2. Click "Configure SSO"
+3. Enter your Identity Provider (IdP) metadata URL or upload the XML file
+4. Map your IdP attributes to Respan fields (email, name, role)
+5. Test the connection before enabling
+
+Once SSO is enabled, all members will be required to authenticate via your IdP.
+You can still allow password login as a fallback in the SSO settings.
+
+Audit Logs
+----------
+All team management actions are recorded in the audit log.
+To view the audit log: Settings → Security → Audit Log
+
+Audit log entries include: action type, actor, target, timestamp, and IP address.
+Audit logs are retained for 90 days on Pro and 1 year on Enterprise.
